@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>CS 313 Web Engineering Website</title>
+	<meta charset="utf-8">
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+	$("img.menuicon").hover(function(){
+    $("#menu").css("visibility", "visible");
+    });
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+	$(".menuoff").click(function(){
+    $("#menu").css("visibility", "hidden");
+    });
+		});
+	</script>
+	
+</head>
+
+<body>
+	<header>
+		<h1>CS313 Web Engineering Website</h1>
+		<h3>Tish Parkinson</h3>
+	</header>
+	
+	<img class="menuicon" src="menuicon.png" alt="menuicon" title="menuicon" />
+	<div id="menu">
+	<nav>
+		<ul>
+			
+			<li> <a id="menuitem" href="index.html">Home</a> </li>
+			<li> <a id="menuitem" href="assignments.html">Assignments</a> </li>
+			<li><a id="menuitem" href="index.html">Exit Menu</a> </li>
+		</ul>
+	</nav>
+	</div>
+	
+	<main>
+	
+	</main>
+	
+	<footer>	
+		<p>All content &copy; Tish Parkinson.</p>
+	</footer>
+</body>
+</html>
