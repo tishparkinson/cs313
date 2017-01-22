@@ -1,0 +1,62 @@
+<?php
+// Start the session
+session_start();
+?>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS313 PROVE 03 | VOTING SURVEY</title>
+	</head>
+
+	<body>
+		<form method="POST" action="votingresults.php">
+			<p>Please answer the following questions:</p>
+			
+			<p>Would you rather take online classes, campus classes or both?</p>
+
+			<input type="radio" name="classtype" value="Online" id="typeonline"> <label for="typeonline">Online</label><br />
+			<input type="radio" name="classtype" value="Campus" id="typecampus"> <label for="typecampus">Campus</label><br />
+			<input type="radio" name="classtype" value="Both" id="typecombination"> <label for="typecombination">Both</label><br /><br />
+
+			
+
+			Do you think campus classes or online classes are more difficult?<br />
+			
+			<input type="radio" name="difficulty" value="Online" id="diffonline"><label for="diffonline">Online classes are more difficult.</label><br />
+			<input type="radio" name="difficulty" value="Campus" id="diffcampus"><label for="diffcampus">Campus classes are more difficult.</label><br />
+			<input type="radio" name="difficulty" value="Both" id="diffboth"><label for="diffboth">The difficulty is about the same for both.</label><br />
+			<br />
+
+			What type of classes have you taken before?<br />
+			<input type="checkbox" name="taken" id="taken-o" value="Online"><label for="taken-online">Online</label><br />
+			<input type="checkbox" name="taken" id="taken-c" value="Campus"><label for="taken-campus">Campus</label><br />
+			<input type="checkbox" name="taken" id="taken-b" value="Both"><label for="taken-both">Both</label><br />
+			<br />
+
+			What would you like to see impoved in online classes the most?<br />
+			<input type="checkbox" name="improve" id="improve-busywork" value="Busy work"><label for="improvebusywork">Less Busy Work</label><br />
+			<input type="checkbox" name="improve" id="improve-goupwork" value="Group Work"><label for="improvegroupwork">Less Group Work</label><br />
+			<input type="checkbox" name="improve" id="improve-tutorials" value="Tutorials"><label for="improvetutorials">More tutorial videos by instructors</label><br />
+			<input type="checkbox" name="improve" id="improve-feedback" value="Feedback"><label for="improvefeedback">More feedback on assignments</label><br />
+			<br />
+			
+			<input type="submit" value="Submit Answers">
+
+
+		</form><br />
+		<? php
+		// Set session variables
+			$_SESSION["classtype"] = $classtype;
+			$_SESSION["difficulty"] = $difficulty;
+			$_SESSION["taken"] = $taken;
+			$_SESSION["improve"] = $improve;
+			echo "Session variables are set.";
+			?>
+		
+		See results without voting <a href="votingresults.php">Click Here</a>
+
+	</body>
+
+</html>
