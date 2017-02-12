@@ -25,14 +25,6 @@
       <td><label for="vip_name">VIP Name:</label></td>
       <td><input type="text" name="vip_name" id="vip_name"></td>
     </tr>
-	<tr>
-      <td><label for="vip_name">Date:</label></td>
-      <td><input type="text" name="transactiondate" id="transactiondate"></td>
-    </tr>
-	<tr>
-      <td><label for="vip_name">Amount:</label></td>
-      <td><input type="text" name="transactionamount" id="transactionamount"></td>
-    </tr>
   </table>
 
   <br />
