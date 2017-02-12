@@ -1,10 +1,11 @@
 <?php
   include 'dbstuff.inc';
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $sql_string = "INSERT INTO vips (name, date, amount)(?)";
+      $sql_string = "INSERT INTO vips (name)(?)";
       $statement = $db->prepare($sql_string);
-      $statement->execute(array($_POST["vip_name"], $_POST["transactiondate"], $_POST["transaction amount"]]));
+      $statement->execute(array($_POST["vip_name"]));
       $newVipId = $db->lastInsertId('vip_id_seq');
+      $categories = $_POST["categories"];
       }
   }
 ?>
@@ -16,13 +17,13 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-<h1>Add a Trasaction</h1>
+<h1>Add a VIP</h1>
 <br />
 <form method="post" action="">
 
   <table>
     <tr>
-      <td><label for="vip_name">VIP Name:</label></td>
+      <td><label for="vip_name">Name:</label></td>
       <td><input type="text" name="vip_name" id="vip_name"></td>
     </tr>
   </table>
@@ -31,6 +32,7 @@
   
   <button name="submit" type="submit">Submit</button>
 </form>
+
 <br />
 <hr>
 <br />
