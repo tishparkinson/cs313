@@ -3,7 +3,9 @@
 <head>
     <title>Budget Search Results</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 <h1>Search Results</h1>

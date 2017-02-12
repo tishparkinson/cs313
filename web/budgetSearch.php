@@ -3,7 +3,9 @@
 <head>
   <title>Scripture Resources</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/cs313-php.css">
+  <link href="style.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 <h1>Budget Search</h1>
