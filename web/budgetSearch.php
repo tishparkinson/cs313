@@ -13,7 +13,7 @@ include 'dbstuff.inc';
 
 
 
-foreach ($db->query('SELECT * from transactionsactions') as $row)
+foreach ($db->query('SELECT * from transactions') as $row)
 {
  print "<p><span id='transactionreference'>$row[1] $row[2] $row[3] $row[4]</p>\n\n";
 }
