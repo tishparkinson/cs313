@@ -5,6 +5,7 @@
   font-weight: light;
 }
 input{
+
 }
 
 header{
@@ -168,7 +169,7 @@ color: white;
 	}
 
 footer{
-  background-image: url("lightgraytexture.png");
+  background-image: url("darkgraytexture.png");
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
