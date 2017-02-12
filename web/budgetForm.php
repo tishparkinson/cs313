@@ -41,6 +41,7 @@
 </form>
 
 <br />
+< a href="budgetSearch.php">Search Database</a>
 <hr>
 <br />
 

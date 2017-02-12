@@ -20,5 +20,7 @@ foreach ($db->query('SELECT * from transactions where vip_name='.$_GET["vip_name
 ?>
 <br />
 <a href="budgetForm.php">Add a Transaction</a>
+<br><br><br>
+<a href="budgetSearch.php">Transaction List</a>
 </body>
 </html>
