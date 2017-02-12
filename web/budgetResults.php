@@ -11,12 +11,12 @@
 <?php
 include 'dbstuff.inc';
 
-foreach ($db->query('SELECT * from transactions where transactionid='.$_GET["transactionid"]) as $row)
+foreach ($db->query('SELECT * from transactions where vip_name='.$_GET["vip_name"]) as $row)
 {
     print "<p><span id='transactionreference'>$row[4]<br> $row[1]<br> $row[2]</span> - \"$row[4]\"</p>\n\n";
 }
 ?>
 <br />
-<a href="budgetSearch.php">Search Again</a>
+<a href="budgetForm.php">Add a Transaction</a>
 </body>
 </html>
