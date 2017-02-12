@@ -1,7 +1,7 @@
 <?php
   include 'dbstuff.inc';
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $sql_string = "INSERT INTO vips (name)(?)";
+      $sql_string = "INSERT INTO vips (vip_name)(?)";
       $statement = $db->prepare($sql_string);
       $statement->execute(array($_POST["vip_name"]));
       $newVipId = $db->lastInsertId('vip_id_seq');
@@ -33,32 +33,7 @@
   <br />
   <button name="submit" type="submit">Submit</button>
 </form>
-<?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    //$searchval = htmlspecialchars($_POST["searchval"]);
-
-    echo "<br />";
-
-    $sqlstring = 'select * from vip_categories';
-    $id="";
-    foreach ($db->query($sqlstring) as $row)
-    {
-      if ($id != $row["id"]) {
-        if ($id !=""){
-            echo "</span></p>\n\n";
-        }
-        $id = $row["id"];
-          echo "<p><span id='transcriptReference'>".$row['transactiondate']." " . $row['transactionamount'] . ":".$row['vip_id'].
-              " - Categories: " . $row["name"];
-      } else {
-        echo ", ".  $row["name"];
-      }
-
-    }
-    echo "</span></p>\n\n";
-}
-?>
 <br />
 <hr>
 <br />
