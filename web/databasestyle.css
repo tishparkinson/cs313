@@ -9,7 +9,7 @@ input{
 }
 
 header{
-  background-image: url("lightgraytexture.png");
+  background-image: url("grayhash.jpg");
   text-align: center;
 }
 h1{
@@ -169,7 +169,7 @@ color: white;
 	}
 
 footer{
-  background-image: url("darkgraytexture.png");
+  background-image: url("grayhash.jpg");
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
