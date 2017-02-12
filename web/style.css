@@ -130,9 +130,8 @@ color: white;
 /* drop down menu */
 .dropbtn {
   text-decoration: none;
-  color:  #white;
+  color:  white;
   font-size: 1em;
-  text-shadow: 1px 1px 1px #c5c1c0;
   padding-left: 50px;
   padding-right: 50px;
 }
