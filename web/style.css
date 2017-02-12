@@ -123,6 +123,9 @@ main {
   text-align: center;
   color: white;
 }
+main a{
+color: white;
+}
 
 footer{
   background-color: darkgray;
