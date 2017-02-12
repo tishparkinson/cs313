@@ -148,7 +148,7 @@ color: white;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background-image: url("hexellence.png");
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -157,7 +157,7 @@ color: white;
 
 .dropdown-content a {
     color: black;
-    padding: 12px;
+    padding: 5px;
     text-decoration: none;
     display: block;
 }
