@@ -12,7 +12,7 @@
 <head>
     <title>Add a Transaction</title>
     <meta charset="UTF-8">
-    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="databasestyle.css" type="text/css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -44,6 +44,8 @@
 < a href="budgetSearch.php">Search Database</a>
 <hr>
 <br />
-
+<footer>
+	CS313 | Tish Parkinson
+</footer>
 </body>
 </html>

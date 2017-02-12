@@ -3,7 +3,7 @@
 <head>
   <title>Scripture Resources</title>
   <meta charset="UTF-8">
-  <link href="style.css" type="text/css" rel="stylesheet"/>
+  <link href="databasestyle.css" type="text/css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -50,5 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <br />
 <hr>
 <br />
+<footer>
+	CS313 | Tish Parkinson
+</footer>
 </body>
 </html>

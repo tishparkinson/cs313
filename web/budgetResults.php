@@ -3,7 +3,7 @@
 <head>
     <title>Budget Search Results</title>
     <meta charset="UTF-8">
-    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link href="databasestyle.css" type="text/css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -22,5 +22,8 @@ foreach ($db->query('SELECT * from transactions where vip_name='.$_GET["vip_name
 <a href="budgetForm.php">Add a Transaction</a>
 <br><br><br>
 <a href="budgetSearch.php">Transaction List</a>
+<footer>
+	CS313 | Tish Parkinson
+</footer>
 </body>
 </html>
