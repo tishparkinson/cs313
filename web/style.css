@@ -4,6 +4,8 @@
   color: #1a2930;
   font-weight: light;
 }
+input{
+}
 
 header{
   background-color: darkgray;
@@ -12,6 +14,9 @@ header{
   border-radius: 10px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+h1{
+text-align: center;
 }
 h4{
   text-align: center;
@@ -46,10 +51,14 @@ img{
 
 button{
   display: block;
-  font-size: .7em;
+  font-size: 1em;
   background-color: transparent;
   border: none;
   text-align: center;
+  padding: 5px;
+}
+button:hover{
+font-decoration: underline;
 }
 
 nav{
