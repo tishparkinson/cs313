@@ -16,6 +16,18 @@
 	Budget Database
 	</header>
 <h2>Register</h2>
+<form method="post" name="reg">
+<label for="userid">User ID: </label>
+<input type="text" name="userid">
+
+<label class="loginFormlbl" for="password">Password: </label>
+<input type="password" name="password" id="password">
+
+<label class="loginFormlbl" for="confpassword">Confirm Password: </label>
+<input type="password" name="confpassword" id="confpassword">
+		
+</form>
+
 <form method="post" id="reg" name="reg">
   <div style="Display: none" id="regdiv">
     <div class="row">
