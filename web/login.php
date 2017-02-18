@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Add a Transaction</title>
+    <title>Login Page</title>
     <meta charset="UTF-8">
     <link href="databasestyle.css" type="text/css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
@@ -16,6 +16,7 @@
 Budget Database
 </header>
 <a href="registration.php">Register</a>
+<h2>Login</h2>
 <form method="post" id="login" name="login">
   <div id="logindiv">
     <div class="row">

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Add a Transaction</title>
+    <title>Registration Page</title>
     <meta charset="UTF-8">
     <link href="databasestyle.css" type="text/css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
@@ -15,7 +15,7 @@
 <header>
 Budget Database
 </header>
-
+<h2>Register</h2>
 <form method="post" id="reg" name="reg">
   <div style="Display: none" id="regdiv">
     <div class="row">
