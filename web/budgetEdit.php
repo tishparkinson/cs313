@@ -7,7 +7,11 @@
                                   transactionamount=:transactionamount
                           WHERE transactionid=:transactionid";
       $statement = $db->prepare($sql_string);
-      $statement->execute(array(':vip_name' => $_POST["vip_name"], ':transactiondate' => $_POST["transactiondate"], ':transactionamount' => $_POST["transactionamount"], ':transactionid' => $_GET['transationid']));
+	  $statement->bindValue(':vip_name', $vip_name);
+	  $statement->bindValue(':transactiondate', $transactiondate);
+	  $statement->bindValue(':transactionamount', $transactionamount);
+      $statement->execute();
+	  $statement->closeCursor();
   }
 ?>
 <!DOCTYPE html>
@@ -30,7 +34,7 @@ Budget Database
   <table>
     <tr>
       <td><label for="vip_name">Name:</label></td>
-      <td><input type="text" name="vip_name" id="vip_name" value="<?php echo :vip_name;?>"></td>
+      <td><input type="text" name="vip_name" id="vip_name" value="<?php echo vip_name;?>"></td>
     </tr>
     <tr>
       <td><label for="transactiondate">Date:</label></td>
