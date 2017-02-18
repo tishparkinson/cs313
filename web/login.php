@@ -15,7 +15,7 @@
 <header>
 Budget Database
 </header>
-
+< a href="registration.php">Register</a>
 <form method="post" id="login" name="login">
   <div id="logindiv">
     <div class="row">
