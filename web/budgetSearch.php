@@ -46,12 +46,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+<pre>
+<?php var_dump($_POST); ?>
+</pre>
 <br />
 <hr>
 <br />
 
 
-<a href="assignments.html">back to: Assignments Page</a>
+<a href="budgetHome.php">Home/a>
 </body>
 </html>
 <br />
