@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "<br />";
 
-    $sqlstring = 'SELECT vip_id, transactiondate, transactionamount from transactions WHERE vip_name = \''. html_entity_decode($searchval) .'\'';
+    $sqlstring = 'SELECT vip_name, transactiondate, transactionamount from transactions WHERE vip_name = \''. html_entity_decode($searchval) .'\'';
     foreach ($db->query($sqlstring) as $row)
     {
         print "<p><span id='transactionreference'><a href='budgetResults.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
