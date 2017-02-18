@@ -8,5 +8,6 @@ if ($_POST) {
         password_hash(filter_var($_POST["password"], FILTER_SANITIZE_STRING), PASSWORD_DEFAULT)));
     $newId = $db->lastInsertId('users_id_seq');
 }
+echo "Successfully Registered";
 echo filter_var($_POST["userid"], FILTER_SANITIZE_STRING);
 ?>
