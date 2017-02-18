@@ -1,5 +1,5 @@
-/* <?php
-  session_start();
+ <?php
+//  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -29,50 +29,6 @@
 <button id="btnreg">Register</button>
 		
 </form>
-
-<form method="post" id="reg" name="reg">
-  <div style="Display: none" id="regdiv">
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <label class="loginFormlbl" for="userid">User ID: </label>
-        <input type="text" name="userid" id="userid">
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <label class="loginFormlbl" for="password">Password: </label>
-        <input type="password" name="password" id="password">
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <label class="loginFormlbl" for="confpassword">Confirm Password: </label>
-        <input type="password" name="confpassword" id="confpassword">
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <button id="btnreg">Submit</button>
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-  </div>
-  </form>
   <a href="login.php">Login</a>
   </body>
   </html> */
