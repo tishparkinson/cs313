@@ -16,7 +16,9 @@ Budget Database
 <br />
 <?php
 include 'dbstuff.inc';
-
+$vip_id = transactions['vip_name'];
+  $transactiondate = transactions['transactiondate'];
+  $transactionamount = transactions['transactionamount'];
 
 
 foreach ($db->query('SELECT * from transactions') as $row) 
