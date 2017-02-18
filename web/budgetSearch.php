@@ -18,7 +18,7 @@ include 'dbstuff.inc';
 
 
 
-foreach ($db->query('SELECT * from transactions') as $row) <input class="radio" type="radio" name="edit" value="edit"/> <label for="editpage">Edit</label>
+foreach ($db->query('SELECT * from transactions') as $row) 
 {
  print "<p><span id='transactionreference'>$row[4]<br> $row[1]<br> $row[2] </p>\n\n";
 }
