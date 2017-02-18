@@ -21,7 +21,7 @@ include 'dbstuff.inc';
 
 foreach ($db->query('SELECT * from transactions') as $row) 
 {
- print "<p><span id='scriptreference'><a href='budgetEdit.php?id=$row[0]'>$row[4] $row[1] $row[2] </a></span></p>\n\n";
+ print "<p><span id='scriptreference'><a href='budgetEdit.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> <button name="delegebtn" type="submit">X</button> </span></p>\n\n";
 }
 ?>
 
