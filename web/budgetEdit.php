@@ -13,9 +13,9 @@
       $statement->execute(array(':vip_name' => $_POST["vip_name"], ':transactiondate' => $_POST["transactiondate"], ':transactionamount' => $_POST["transactionamount"], ':transactionid' => $_GET['transationid']));
   }
 
-  $vip_id = $vips['vip_name'];
-  $transactiondate = $vips['transactiondate'];
-  $transactionamount = $vips['transactionamount'];
+  $vip_id = vips['vip_name'];
+  $transactiondate = vips['transactiondate'];
+  $transactionamount = vips['transactionamount'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
