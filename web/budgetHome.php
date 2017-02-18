@@ -21,7 +21,7 @@ include 'dbstuff.inc';
 
 foreach ($db->query('SELECT * from transactions') as $row) 
 {
- print "<p><span id='scriptref'>$row[4]          $row[1]          $row[2] </p>\n\n";
+ print "<p><span id='scriptref'>$row[4] $row[1] "$"$row[2] </p>\n\n";
 }
 ?>
 
