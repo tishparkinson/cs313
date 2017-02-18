@@ -25,6 +25,8 @@
 
 <label class="loginFormlbl" for="confpassword">Confirm Password: </label>
 <input type="password" name="confpassword" id="confpassword">
+
+<button id="btnreg">Submit</button><button id="btnreg">Register</button>
 		
 </form>
 
