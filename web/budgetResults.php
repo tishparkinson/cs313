@@ -18,7 +18,7 @@ include 'dbstuff.inc';
 
 foreach ($db->query('SELECT * from transactions where vip_name='.$_GET["vip_name"]) as $row)
 {
-    print "<p><span id='transactionreference'>$row[4]<br> $row[1]<br> $row[2] $row[4]</p>\n\n";
+    print "<p><span id='transactionreference'>$row[4]<br> $row[1]<br> $row[2]</p>\n\n";
 }
 ?>
 <pre>
@@ -31,5 +31,28 @@ foreach ($db->query('SELECT * from transactions where vip_name='.$_GET["vip_name
 <footer>
 	CS313 | Tish Parkinson
 </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scripture Resources</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/cs313-php.css">
+</head>
+<body>
+<h1>Scripture Resources - Scripture Details</h1>
+<br />
+<?php
+include 'dbstuff.inc';
+
+foreach ($db->query('SELECT * from scriptures where id='.$_GET["id"]) as $row)
+{
+    print "<p><span id='scriptreference'><a href='budgetEdit.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
+}
+?>
+<br />
+<a href="scripture_search.php">Back to Scripture Resources - Search Page</a>
 </body>
 </html>
