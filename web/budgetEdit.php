@@ -30,7 +30,7 @@ Budget Database
   <table>
     <tr>
       <td><label for="vip_name">Name:</label></td>
-      <td><input type="text" name="vip_name" id="vip_name" value="<?php echo vip_name;?>"></td>
+      <td><input type="text" name="vip_name" id="vip_name" value="<?php echo :vip_name;?>"></td>
     </tr>
     <tr>
       <td><label for="transactiondate">Date:</label></td>
