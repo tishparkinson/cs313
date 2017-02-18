@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (isset($_SESSION) && isset($_SESSION['user_id']) && $_SESSION["auth"] == 'True') {
+
+} else {
+    header("Location: login.php");
+    die();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +19,7 @@
 </head>
 <body>
 <header>
+<h1 id="result"><?php  echo 'Welcome '.$_SESSION["user_id"]; ?></h1>
 Budget Database
 </header>
 <h1>Budget Search</h1>
@@ -20,7 +31,7 @@ include 'dbstuff.inc';
 
 foreach ($db->query('SELECT * from transactions') as $row) 
 {
- print "<p><span id='transactionreference'>$row[4]<br> $row[1]<br> $row[2] </p>\n\n";
+ echo "<p><span id='transactionreference'><a href='budgetEdit.php?id=$row[4]<br> $row[1]<br> $row[2] </p>\n\n";
 }
 ?>
 
