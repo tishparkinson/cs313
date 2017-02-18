@@ -47,58 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <br />
 <hr>
 <br />
-<script type="text/javascript">
-    $(document).ready(function() {
-      $("input[name='edit']").click(function(){
-          if ($("input[name='edit']:checked").val() == 'edit') {
-              $( "#regdiv" ).hide();
-              $( "#editdiv").show();
-          }else {
-              $("#editdiv").hide();
-              $("#regdiv").show();
-          }
-      });
 
-        $('#login').submit(function(e){
-
-            e.preventDefault(); // Prevent Default Submission
-
-            $.ajax({
-                url: 'login-inc.php',
-                type: 'POST',
-                data: $(this).serialize() // it will serialize the form data
-            })
-                .done(function(data){
-                    if (data == 'valid') {
-                        window.location.href = 'budgetSearch.php'
-                    } else {
-                        $('#result').text(data);
-                    }
-
-                })
-                .fail(function(){
-                    alert('Ajax Submit Failed ...');
-                });
-        });
-
-        $('#reg').submit(function(e){
-
-            e.preventDefault(); // Prevent Default Submission
-
-            $.ajax({
-                url: 'dbstuff.inc',
-                type: 'POST',
-                data: $(this).serialize() // it will serialize the form data
-            })
-                .done(function(data){
-                    $('#result').text(data);
-                })
-                .fail(function(){
-                    alert('Ajax Submit Failed ...');
-                });
-        });
-    });
-</script>
 
 <a href="assignments.html">back to: Assignments Page</a>
 </body>
