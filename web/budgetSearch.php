@@ -27,7 +27,7 @@ foreach ($db->query('SELECT * from transactions') as $row)
 <form method="post" action="">
     <label for="searchval">Search Transactions for:</label>
     <input type="text" name="searchval" id="searchval">
-    <button name="submit" type="submit">Search!</button>
+    <button name="submit" type="submit">Search</button>
 </form>
 <?php
 include 'dbstuff.inc';
