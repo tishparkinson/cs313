@@ -50,6 +50,7 @@ Budget Database
     </div>
   </div>
   </form>
+  <br><br>
   <a href="registration.php">Register</a>
   </body>
   </html>
