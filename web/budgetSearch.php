@@ -24,22 +24,13 @@ Budget Database
 </header>
 <h1>Budget Search</h1>
 <br />
-<?php
-include 'dbstuff.inc';
-
-
-
-foreach ($db->query('SELECT * from transactions') as $row) 
-{
- echo "<p><span id='transactionreference'><a href='budgetEdit.php?id=$row[4]<br> $row[1]<br> $row[2] </p>\n\n";
-}
-?>
 
 <form method="post" action="">
     <label for="searchval">Search Transactions for:</label>
     <input type="text" name="searchval" id="searchval">
-    <button name="submit" type="submit">Search</button>
+    <button name="searchbtn" type="submit">Search</button>
 </form>
+
 <?php
 include 'dbstuff.inc';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -48,10 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "<br />";
 
-    $sqlstring = 'SELECT transactionid, transactiondate, transactionamount from transactions WHERE vip_name, transactiondate, transactionamount = \''. html_entity_decode($searchval) .'\'';
+    $sqlstring = 'SELECT vip_id, transactiondate, transactionamount from transactions WHERE vip_name, transactiondate, transactionamount = \''. html_entity_decode($searchval) .'\'';
     foreach ($db->query($sqlstring) as $row)
     {
-        echo "<p><span id='transactionreference'><a href='budgetResults.php?id=$row[4]<br> $row[3]<br> $row[2]</a></span></p>\n\n";
+        echo "<p><span id='scriptreference'><a href='budgetEdit.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
     }
 }
 ?>
