@@ -46,7 +46,8 @@ Budget Database
   </table>
 
   <br />
-  <button name="submit" type="submit">Edit</button>
+  <button name="editbtn" type="submit">Edit</button>
+  <button name="deletebtn" type="submit">Delete</button>
 </form>
 
 <br />
