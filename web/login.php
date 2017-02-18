@@ -12,45 +12,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<header>
-Budget Database
-</header>
+	<header>
+	Budget Database
+	</header>
 
-<h2>Login</h2>
-<form method="post" id="login" name="login">
-  <div id="logindiv">
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <label class="loginFormlbl" for="loginuserid">User ID: </label>
-        <input type="text" name="loginuserid" id="loginuserid">
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <label class="loginFormlbl" for="loginpassword">Password: </label>
-        <input type="password" checked="checked" name="loginpassword" id="loginpassword">
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-sm-6">
-        <button id="btnlogin">Submit</button>
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-  </div>
-  </form>
-  <br><br>
-  <a href="registration.php">Register</a>
+	<h2>Login</h2>
+	<form method="post" name="login">
+			<label class="loginFormlbl" for="loginuserid">User ID: </label>
+			<input type="text" name="loginuserid" id="loginuserid">
+			<label class="loginFormlbl" for="loginpassword">Password: </label>
+			<input type="password" checked="checked" name="loginpassword" id="loginpassword">
+			<button id="btnlogin">Login</button>
+	  </form>
+	  <br><br>
+	  <a href="registration.php">Register</a>
   </body>
   </html>

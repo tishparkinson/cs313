@@ -16,6 +16,7 @@ if ($_POST) {
         $_SESSION["user_id"] = $username;
         $_SESSION["auth"] = 'True';
         echo 'valid';
+		header("Location: budgetSearch.php");
     } else {
         echo 'Bad User Name / Password combination.  Try again.';
     }
