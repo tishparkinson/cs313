@@ -60,7 +60,7 @@ button{
   padding: 5px;
 }
 button:hover{
-font-decoration: underline;
+border-bottom: 1px solid black;
 }
 
 nav{
