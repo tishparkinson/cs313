@@ -1,4 +1,4 @@
-<?php
+/* <?php
   session_start();
 ?>
 
@@ -75,4 +75,4 @@
   </form>
   <a href="login.php">Login</a>
   </body>
-  </html>
+  </html> */

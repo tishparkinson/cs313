@@ -1,4 +1,4 @@
-<?php
+/* <?php
 include 'dbstuff.inc';
 if ($_POST) {
     $sql_string = "INSERT INTO users(username, password) values (?,?)";
@@ -10,4 +10,4 @@ if ($_POST) {
 }
 echo "Successfully Registered";
 echo filter_var($_POST["userid"], FILTER_SANITIZE_STRING);
-?>
+?> */

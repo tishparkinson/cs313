@@ -1,4 +1,4 @@
-<?php
+/* <?php
 include 'dbstuff.inc';
 if ($_POST) {
     $sql_string = "select username, password from users where username='".$_POST["loginuserid"]."'";
@@ -22,3 +22,4 @@ if ($_POST) {
     }
 }
 ?>
+ */

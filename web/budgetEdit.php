@@ -3,9 +3,9 @@
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $sql_string = 'UPDATE transactions 
 			SET 
-			vip_name=vip_name, 
-			transactiondate=transactiondate, 
-			transactionamount=transactionamount
+			vip_name=:vip_name, 
+			transactiondate=:transactiondate, 
+			transactionamount=:transactionamount
 
 			WHERE 
 			transactionid='.$_GET["transactionid"]''; 

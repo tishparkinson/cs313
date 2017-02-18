@@ -1,4 +1,4 @@
-<?php
+/* <?php
   session_start();
 ?>
 
@@ -27,4 +27,4 @@
 	  <br><br>
 	  <a href="registration.php">Register</a>
   </body>
-  </html>
+  </html> */
