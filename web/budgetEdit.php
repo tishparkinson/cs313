@@ -8,7 +8,7 @@
 			transactionamount=:transactionamount
 
 			WHERE 
-			transactionid='.$_GET["transactionid"]''; 
+			transactionid='.$_GET[":transactionid"]''; 
       $statement = $db->prepare($sql_string);
       $statement->execute(array($_POST["vip_name"],$_POST["transactiondate"],$_POST["transactionamount"]));
   }
