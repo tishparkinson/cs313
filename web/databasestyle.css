@@ -27,8 +27,13 @@ h3{
 body {
   width: 100%;
   background-image: url("lightgraytexture.png");
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+a{
+margin: 0 auto;
+}
 img{
   display: block;
   width: 55px;
