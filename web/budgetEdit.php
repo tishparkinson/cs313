@@ -1,16 +1,13 @@
 <?php
   include 'dbstuff.inc';
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $sql_string = 'UPDATE transactions 
-			SET 
-			vip_name=:vip_name, 
-			transactiondate=:transactiondate, 
-			transactionamount=:transactionamount
-
-			WHERE 
-			transactionid='.$_GET[":transactionid"]''; 
+      $sql_string = "UPDATE transactions
+                           SET vip_name=:vip_name,
+                                  transactiondate=:transactiondate,
+                                  transactionamount=:transactionamount
+                          WHERE transactionid=:transactionid";
       $statement = $db->prepare($sql_string);
-      $statement->execute(array($_POST["vip_name"],$_POST["transactiondate"],$_POST["transactionamount"]));
+      $statement->execute(array(':vip_name' => $_POST["vip_name"], ':transactiondate' => $_POST["transactiondate"], ':transactionamount' => $_POST["transactionamount"], ':transactionid' => $_GET['transationid']));
   }
 ?>
 <!DOCTYPE html>
