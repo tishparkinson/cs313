@@ -21,7 +21,7 @@ include 'dbstuff.inc';
 
 foreach ($db->query('SELECT * from transactions') as $row) 
 {
- echo "<p><span id='transactionreference'><a href='budgetEdit.php?id=$row[4]<br> $row[1]<br> $row[2] </p>\n\n";
+ print "<p><span id='scriptref'>$row[4]<br> $row[1]<br> $row[2] </p>\n\n";
 }
 ?>
 
@@ -30,7 +30,7 @@ foreach ($db->query('SELECT * from transactions') as $row)
 <br />
 
 
-<a href="budgetForm.php">Search Transactions</a>
+<a href="assignments.html">Search Transactions</a>
 </body>
 </html>
 <br />
