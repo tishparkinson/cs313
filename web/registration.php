@@ -12,9 +12,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<header>
-Budget Database
-</header>
+	<header>
+	Budget Database
+	</header>
 <h2>Register</h2>
 <form method="post" id="reg" name="reg">
   <div style="Display: none" id="regdiv">
@@ -59,5 +59,6 @@ Budget Database
     </div>
   </div>
   </form>
+  <a href="login.php">Login</a>
   </body>
   </html>

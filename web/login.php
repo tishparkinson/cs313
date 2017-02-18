@@ -15,7 +15,7 @@
 <header>
 Budget Database
 </header>
-<a href="registration.php">Register</a>
+
 <h2>Login</h2>
 <form method="post" id="login" name="login">
   <div id="logindiv">
@@ -50,5 +50,6 @@ Budget Database
     </div>
   </div>
   </form>
+  <a href="registration.php">Register</a>
   </body>
   </html>
