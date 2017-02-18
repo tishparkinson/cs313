@@ -2,7 +2,7 @@
   include 'dbstuff.inc';
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  
-      $sql_string = 'UPDATE transactions SET (vip_name, transactiondate, transactionamount) values (vip_name, transactiondate, transactionamount) WHERE transactionid='.$_GET["transactionid"]''; 
+      $sql_string = 'UPDATE transactions SET vip_name="vip_name", transactiondate="transactiondate", transactionamount="transactionamount" WHERE transactionid='.$_GET["transactionid"]''; 
       $statement = $db->prepare($sql_string);
       $statement->execute(array($_POST["vip_name"],$_POST["transactiondate"],$_POST["transactionamount"]));
       $newId = $db->lastInsertId('transactions_id_seq');
