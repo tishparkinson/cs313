@@ -18,7 +18,7 @@ include 'dbstuff.inc';
 
 foreach ($db->query('SELECT * from transactions where transactionid='.$_GET["transactionid"]) as $row)
 {
-    print "<p><span id='scriptreference'><a href='budgetForm.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
+    print "<p><span id='scriptreference'><a href='budgetResults.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
 }
 ?>
 
