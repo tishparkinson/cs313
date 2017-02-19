@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <br />
 
 
-<a href="budgetHome.php">Home/a>
+<a href="budgetHome.php">Home</a>
 </body>
 </html>
 <br />

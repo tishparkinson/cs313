@@ -16,7 +16,7 @@ Budget Database
 <?php
 include 'dbstuff.inc';
 
-foreach ($db->query('SELECT * from transactions where vip_name='.$_GET["vip_name"]) as $row)
+foreach ($db->query('SELECT * from transactions where transactionid='.$_GET["transactionid"]) as $row)
 {
     print "<p><span id='transactionreference'>$row[4]<br> $row[1]<br> $row[2]</p>\n\n";
 }
