@@ -11,11 +11,12 @@
 	  $statement->bindValue(':transactiondate', $transactiondate);
 	  $statement->bindValue(':transactionamount', $transactionamount);
       $statement->execute(array(':vip_name' => $_POST["vip_name"], ':transactiondate' => $_POST["transactiondate"], ':transactionamount' => $_POST["transactionamount"], ':transactionid' => $_GET['transationid']));
-  }
-
-  $vip_name = $_POST["vip_name"];
+	  $vip_name = $_POST["vip_name"];
   $transactiondate = $_POST["transactiondate"];
   $transactionamount = $_POST["transactionamount"];
+  }
+
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,11 +34,6 @@ Budget Database
 <h1>Edit a Transaction</h1>
 <br />
 <form method="post" action="">
-<?php
-$vip_name = $_POST["vip_name"];
-  $transactiondate = $_POST["transactiondate"];
-  $transactionamount = $_POST["transactionamount"];
-  ?>
 
   <table>
     <tr>
