@@ -23,7 +23,7 @@ $vip_id = transactions['vip_name'];
 
 foreach ($db->query('SELECT * from transactions') as $row) 
 {
- print "<p><span id='scriptreference'><a href='budgetEdit.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
+ echo "<p><span id='scriptreference'><a href='budgetEdit.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span><button action="budgetEdit.php">Edit</button></p>\n\n";
 }
 ?>
 
