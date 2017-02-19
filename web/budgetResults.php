@@ -22,6 +22,10 @@ foreach ($db->query('SELECT * from transactions where transactionid='.$_GET["tra
 }
 ?>
 
+<pre>
+<?php var_dump($_POST); ?>
+</pre>
+
 <br />
 <a href="budgetForm.php">Add a Transaction</a>
 <br><br><br>
