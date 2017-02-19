@@ -47,6 +47,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<pre>
+<?php var_dump($_POST); ?>
+</pre>
+
 <br />
 <hr>
 <br />
