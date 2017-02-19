@@ -33,6 +33,11 @@ Budget Database
 <h1>Edit a Transaction</h1>
 <br />
 <form method="post" action="">
+<?php
+$vip_name = $_POST["vip_name"];
+  $transactiondate = $_POST["transactiondate"];
+  $transactionamount = $_POST["transactionamount"];
+  ?>
 
   <table>
     <tr>
