@@ -1,6 +1,6 @@
 <?php
   include 'dbstuff.inc';
-  $transactionid = $_GET['transationid'];
+  $transactionid = $_GET['transactionid'];
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  $vip_name = $_POST["vip_name"];
   $transactiondate = transactions['transactiondate'];
@@ -14,9 +14,8 @@
       $statement = $db->exec($sql_string);
   }
   
-  $statement = $db->query('SELECT * from transactions WHERE trasactionid = '$transactionid');
+  $statement = $db->query("SELECT * from transactions WHERE transactionid = '$transactionid'");
   $row=$statement->fetch();
-
  $vip_name= $row['vip_name'];
  $transactionamount = $row['transactionamount'];
  $transactiondate = $row['transactiondate'];
