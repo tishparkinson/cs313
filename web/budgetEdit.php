@@ -1,7 +1,7 @@
 <?php
   include 'dbstuff.inc';
   $transactionid = $_GET['transactionid'];
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['editbtn'])) {
 	  $vip_name = $_POST["vip_name"];
   $transactiondate = $_POST['transactiondate'];
   $transactionamount = $_POST['transactionamount'];
@@ -12,6 +12,13 @@
                                   transactionamount='$transactionamount'
                           WHERE transactionid='$transactionid'";
       $statement = $db->exec($sql_string);
+	  header("Location: budgetHome.php");
+	  
+  } else if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['deletebtn'])) {
+	  $sql_string = "DELETE FROM transactions
+                          WHERE transactionid='$transactionid'";
+      $statement = $db->exec($sql_string);
+	  header("Location: budgetHome.php");
   }
   
   $statement = $db->query("SELECT * from transactions WHERE transactionid = '$transactionid'");
@@ -19,11 +26,13 @@
  $vip_name= $row['vip_name'];
  $transactionamount = $row['transactionamount'];
  $transactiondate = $row['transactiondate'];
+ 
+ 
 
 ?>
 
   
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +66,7 @@ Budget Database
   </table>
 
   <br />
-  <button name="editbtn" type="submit">Edit</button>
+  <button name="editbtn" type="submit">Save Changes</button>
   <button name="deletebtn" type="submit">Delete</button>
 </form>
 
