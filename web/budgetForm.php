@@ -45,6 +45,8 @@ Budget Database
 
 <br />
 <a href="budgetSearch.php">Search</a>
+<br />
+<a href="budgetHome.php">Home</a>
 <hr>
 <br />
 <footer>

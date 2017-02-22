@@ -20,7 +20,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Add a Transaction</title>
+    <title>Edit a Transaction</title>
     <meta charset="UTF-8">
     <link href="databasestyle.css" type="text/css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
@@ -55,7 +55,7 @@ Budget Database
 </form>
 
 <br />
-<a href="budgetSearch.php">Search</a>
+<a href="budgetHome.php">Back to Home</a>
 <hr>
 <br />
 <footer>
