@@ -3,8 +3,8 @@
   $transactionid = $_GET['transactionid'];
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  $vip_name = $_POST["vip_name"];
-  $transactiondate = transactions['transactiondate'];
-  $transactionamount = transactions['transactionamount'];
+  $transactiondate = $_POST['transactiondate'];
+  $transactionamount = $_POST['transactionamount'];
   
       $sql_string = "UPDATE transactions
                            SET vip_name='$vip_name',
