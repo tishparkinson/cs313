@@ -32,7 +32,7 @@ foreach ($db->query('SELECT * from transactions ORDER BY transactionid') as $row
 <br />
 
 
-<a href="assignments.html">Search Transactions</a>
+<a href="budgetSearch.php">Search Transactions</a>
 </body>
 </html>
 <br />

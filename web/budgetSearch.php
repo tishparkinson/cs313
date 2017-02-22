@@ -43,14 +43,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ";
     foreach ($db->query($sqlstring) as $row)
     {
-        echo "<p><span id='scriptreference'><a href='budgetResults.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
+        echo "<p><span id='scriptreference'><a href='budgetEdit.php?transactionid=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
     }
 }
 ?>
-
-<pre>
-<?php var_dump($_POST); ?>
-</pre>
 
 <br />
 <hr>
