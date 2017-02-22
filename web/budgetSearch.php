@@ -39,7 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "<br />";
 
-    $sqlstring = "SELECT * from transactions WHERE Column like '%$searchval%' ";
+    $sqlstring = "select * from transactions WHERE vip_name ilike '%$searchval%' OR CAST(transactiondate AS varchar) ILIKE '%$searchval%' OR CAST(transactionamount AS varchar) ILIKE '%$searchval%' ;
+";
     foreach ($db->query($sqlstring) as $row)
     {
         echo "<p><span id='scriptreference'><a href='budgetResults.php?id=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
