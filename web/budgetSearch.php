@@ -25,7 +25,7 @@ Budget Database
 <h1>Budget Search</h1>
 <br />
 
-<form method="post" action="budgetResults.php">
+<form method="post" action="#">
     <label for="searchval">Search Transactions for:</label>
     <input type="text" name="searchval" id="searchval">
     <button name="searchbtn" type="submit">Search</button>
