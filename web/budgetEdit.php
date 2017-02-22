@@ -2,10 +2,10 @@
   include 'dbstuff.inc';
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $sql_string = "UPDATE transactions
-                           SET vip_name=:vip_name,
-                                  transactiondate=:transactiondate,
-                                  transactionamount=:transactionamount
-                          WHERE transactionid=:transactionid";
+                           SET vip_name=':vip_name',
+                                  transactiondate=':transactiondate',
+                                  transactionamount=':transactionamount'
+                          WHERE transactionid=':transactionid'";
       $statement = $db->prepare($sql_string);
 	  $statement->bindValue(':vip_name', $vip_name);
 	  $statement->bindValue(':transactiondate', $transactiondate);

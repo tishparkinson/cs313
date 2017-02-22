@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Scripture Resources</title>
+  <title>Budget Search</title>
   <meta charset="UTF-8">
   <link href="databasestyle.css" type="text/css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
