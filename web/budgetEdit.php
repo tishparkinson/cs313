@@ -1,21 +1,29 @@
 <?php
   include 'dbstuff.inc';
+  $transactionid = $_GET['transationid'];
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $sql_string = "UPDATE transactions
-                           SET vip_name=':vip_name',
-                                  transactiondate=':transactiondate',
-                                  transactionamount=':transactionamount'
-                          WHERE transactionid=':transactionid'";
-      $statement = $db->prepare($sql_string);
-	  $statement->bindValue(':vip_name', $vip_name);
-	  $statement->bindValue(':transactiondate', $transactiondate);
-	  $statement->bindValue(':transactionamount', $transactionamount);
-      $statement->execute(array(':vip_name' => $_POST["vip_name"], ':transactiondate' => $_POST["transactiondate"], ':transactionamount' => $_POST["transactionamount"], ':transactionid' => $_GET['transationid']));
-  }
-
-  $vip_name = $_POST["vip_name"];
+	  $vip_name = $_POST["vip_name"];
   $transactiondate = transactions['transactiondate'];
   $transactionamount = transactions['transactionamount'];
+  
+      $sql_string = "UPDATE transactions
+                           SET vip_name='$vip_name',
+                                  transactiondate='$transactiondate',
+                                  transactionamount='$transactionamount'
+                          WHERE transactionid='$transactionid'";
+      $statement = $db->exec($sql_string);
+  }
+  
+  $statement = $db->query('SELECT * from transactions WHERE trasactionid = '$transactionid');
+  $row=$statement->fetch();
+
+ $vip_name= $row['vip_name'];
+ $transactionamount = $row['transactionamount'];
+ $transactiondate = $row['transactiondate'];
+
+?>
+
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
