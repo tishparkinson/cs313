@@ -21,7 +21,17 @@ $vip_id = transactions['vip_name'];
 
 foreach ($db->query('SELECT * from transactions ORDER BY transactionid') as $row) 
 {
- echo "<p><span id='scriptreference'><a href='budgetEdit.php?transactionid=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
+ echo "<table>
+  echo "<tr>"
+    echo "<td>$row[0]</td>";
+    echo "<td>$row[4]</td>";
+    echo "<td>$row['Message']</td>";
+    echo "<td><img src='".$row['Image']."'/></td>";
+    echo "</tr>"
+}
+echo "</table>"
+
+<p><span id='transactionEcho'><a href='budgetEdit.php?transactionid=$row[0]'>$row[4] $row[1] $row[2] </a> </span></p>\n\n";
 }
 ?>
 
