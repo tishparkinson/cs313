@@ -9,7 +9,7 @@ width: 400px;
 }
 
 header{
-  background-image: url("grungereddiamonds.png");
+  background-image: url("grayhash.jpg");
   text-align: center;
 }
 h1{
@@ -31,7 +31,7 @@ h3{
 
 body {
   width: 100%;
-  background-image: url("lightgraytexture.png");
+  background-image: url("lgrungereddiamonds.png");
   padding-top: 40px;
   padding-bottom: 40px;
 }
