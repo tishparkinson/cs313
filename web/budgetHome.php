@@ -25,8 +25,8 @@ foreach ($db->query('SELECT * from transactions ORDER BY transactionid') as $row
   echo "<tr>"
     echo "<td>$row[0]</td>";
     echo "<td>$row[4]</td>";
-    echo "<td>$row['Message']</td>";
-    echo "<td><img src='".$row['Image']."'/></td>";
+    echo "<td>$row[1]</td>";
+
     echo "</tr>"
 }
 echo "</table>"
