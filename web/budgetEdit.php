@@ -1,12 +1,12 @@
 <?php
   include 'dbstuff.inc';
-  $transactionid = $_GET['transactionid'];
-  if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['editbtn'])) {
-	  $vip_name = $_POST["vip_name"];
+  $transactionid = $_GET['transactionid']; //pulling variable from the URL 
+  if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['editbtn'])) { //checks to see if it's submitted and if edit button was clicked
+	  $vip_name = $_POST["vip_name"]; //pulls variable from post array and assigning to variable
   $transactiondate = $_POST['transactiondate'];
   $transactionamount = $_POST['transactionamount'];
   
-      $sql_string = "UPDATE transactions
+      $sql_string = "UPDATE transactions //updates the database columns
                            SET vip_name='$vip_name',
                                   transactiondate='$transactiondate',
                                   transactionamount='$transactionamount'

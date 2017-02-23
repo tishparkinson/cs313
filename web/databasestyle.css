@@ -9,12 +9,17 @@ width: 400px;
 }
 
 header{
-  background-image: url("grayhash.jpg");
+  background-image: url("grungereddiamonds.png");
   text-align: center;
 }
 h1{
 text-align: center;
 }
+
+echo{
+color: navy;
+}
+
 h4{
   text-align: center;
   padding-top: 40px;
