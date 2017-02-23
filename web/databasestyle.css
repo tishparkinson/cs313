@@ -1,6 +1,6 @@
 * {
   margin: 0 auto;
-  font-family: serif;
+  font-family: sans-serif;
   color: #1a2930;
 }
 input{
@@ -38,7 +38,10 @@ body {
 
 a{
 margin: 0 auto;
-color: #ffffff;
+color: beige;
+  text-align: left;
+  margin-left: 450px;
+  line-height: 30px;
 }
 img{
   display: block;

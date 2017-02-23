@@ -21,7 +21,7 @@ $vip_id = transactions['vip_name'];
 
 foreach ($db->query('SELECT * from transactions ORDER BY transactionid') as $row) 
 {
- echo "<p><span id='printedecho'><a href='budgetEdit.php?transactionid=$row[0]'>$row[0] $row[4] $row[1] $row[2] </a> </span></p>\n\n";
+ echo "<p><span id='printedecho'><a href='budgetEdit.php?transactionid=$row[0]'>'ID: '$row[0] 'Name: '$row[4] 'Transaction Date: '$row[1] ;Transaction Amount: '$row[2] </a> </span></p>\n\n";
 }
 ?>
 
