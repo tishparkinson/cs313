@@ -19,9 +19,9 @@ $vip_id = transactions['vip_name'];
   $transactionamount = transactions['transactionamount'];
 
 
-foreach ($db->query('SELECT * from transactions ORDER BY transactionid') as $row) 
+foreach ($db->query("SELECT * from transactions ORDER BY transactionid") as $row) 
 {
- echo "<p><span id='printedecho'><a href='budgetEdit.php?transactionid=$row[0]'>'ID: '$row[0] 'Name: '$row[4] 'Transaction Date: '$row[1] ;Transaction Amount: '$row[2] </a> </span></p>\n\n";
+ echo "<p><span id='printedecho'><a href='budgetEdit.php?transactionid=$row[0]'>'ID#: '$row[0] 'Payee Name: '$row[4] 'Transaction Date: '$row[1] 'Transaction Amount: '$row[2] </a> </span></p>\n\n";
 }
 ?>
 

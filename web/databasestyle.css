@@ -39,10 +39,16 @@ body {
 a{
 margin: 0 auto;
 color: beige;
+background-color: beige;
   text-align: left;
   margin-left: 450px;
   line-height: 30px;
 }
+
+a{
+border-bottom: 1px solid black;
+}
+
 img{
   display: block;
   width: 55px;
